@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Incode Software, incode.org
 ENV INSTALL_DIR /data
-ENV DB incodehqdb
+ENV DB incodehq
 ENV USER incodehq
 RUN mkdir -m a=rwx ${INSTALL_DIR}
 #VOLUME ${INSTALL_DIR}
@@ -20,4 +20,3 @@ RUN /usr/pgsql-9.5/bin/pg_ctl -D /data start -w &&\
     createdb -O ${USER} ${DB}
 EXPOSE 5432
 CMD ["/usr/pgsql-9.5/bin/postgres", "-D", "/data", "-c", "config_file=/data/postgresql.conf"]
-
