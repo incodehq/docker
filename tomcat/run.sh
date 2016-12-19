@@ -1,2 +1,0 @@
-#!/bin/bash
-docker run --name tomcat --link postgres:db -e ISIS_OPTS="isis.persistor.datanucleus.impl.javax.jdo.option.ConnectionDriverName=org.postgresql.Driver||isis.persistor.datanucleus.impl.javax.jdo.option.ConnectionURL=jdbc:postgresql://db:5432/isis||isis.persistor.datanucleus.impl.javax.jdo.option.ConnectionUserName=isis||isis.persistor.datanucleus.impl.javax.jdo.option.ConnectionPassword=isis" -p 8081:8080 -d incodehq/tomcat
