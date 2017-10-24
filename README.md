@@ -1,4 +1,2 @@
 # docker
-DEPRECATED
-
 Minimalistic Dockerfiles 
