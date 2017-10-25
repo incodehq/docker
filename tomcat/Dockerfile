@@ -12,6 +12,7 @@ RUN apk add --no-cache curl="7.56.1-r0" && \
     unzip ${SERVER_HOME}.zip -d /opt && \
     chmod a+x ${SERVER_HOME}/bin/catalina.sh && \
 	apk del curl && \
+	rm -rf ${DEPLOYMENT_DIR}/* && \
 	rm -f ${SERVER_HOME}.zip
 ENTRYPOINT ${SERVER_HOME}/bin/catalina.sh run
 EXPOSE 8080
