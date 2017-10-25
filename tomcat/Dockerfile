@@ -5,7 +5,7 @@ ENV ARCHIVE apache-tomcat-${TOMCAT_VERSION}
 ENV INSTALL_DIR /opt
 ENV SERVER_HOME ${INSTALL_DIR}/${ARCHIVE}
 ENV CATALINA_HOME ${SERVER_HOME}
-ENV DEPLOYMENT_DIR ${SERVER_HOME}/webapps/
+ENV DEPLOYMENT_DIR ${SERVER_HOME}/webapps
 RUN apk add --no-cache curl="7.56.1-r0" && \ 
     mkdir -p ${SERVER_HOME} && \
     curl http://apache.mirror.iphh.net/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.zip > ${SERVER_HOME}.zip && \
