@@ -1,4 +1,4 @@
-FROM incodehq/java:alpine-1.4
+FROM incodehq/java:alpine-1.5
 LABEL maintainer="Incode Software, incode.org"
 ENV TOMCAT_VERSION 8.5.23
 ENV ARCHIVE apache-tomcat-${TOMCAT_VERSION}
