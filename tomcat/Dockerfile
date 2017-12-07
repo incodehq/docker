@@ -10,7 +10,7 @@ RUN apk add --no-cache curl="7.56.1-r0" && \
     mkdir -p ${SERVER_HOME} && \
     mkdir -p $CATALINA_HOME/conf/Catalina/localhost && \
     curl http://apache.mirror.iphh.net/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.zip > ${SERVER_HOME}.zip && \
-    unzip ${SERVER_HOME}.zip -d /opt && \
+    unzip ${SERVER_HOME}.zip -d ${INSTALL_DIR} && \
     chmod a+x ${SERVER_HOME}/bin/catalina.sh && \
     apk del curl && \
     rm -rf ${DEPLOYMENT_DIR}/* && \
