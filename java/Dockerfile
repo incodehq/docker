@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 LABEL maintainer="Incode Software, incode.org"
 ENV JRE_HOME /usr/lib/jvm/java-1.8-openjdk/
 ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/lib/jvm/java-1.8-openjdk/bin
