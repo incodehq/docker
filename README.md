@@ -1,2 +1,0 @@
-# docker
-Minimalistic Dockerfiles 

@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.incode</groupId>
+    <artifactId>docker</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Incode Docker images</name>
+    <description>
+        This pom.xml is simply to make it easy to open these files within IntelliJ as a maven project.
+    </description>
+
+    <url>https://github.com/incodehq/docker</url>
+
+</project>

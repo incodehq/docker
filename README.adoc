@@ -1,0 +1,14 @@
+= docker
+
+Minimalistic Dockerfiles
+
+The build process, for example:
+
+[source,bash]
+----
+cd hawtio
+sh ../build.sh
+docker tag incodehq/hawtio:latest incodehq/hawtio:2.0.3
+docker push incodehq/hawtio:2.0.3
+----
+
