@@ -1,0 +1,11 @@
+= README
+
+as per https://docs.antora.org/antora/2.0/antora-container/#extend-the-antora-image[antora docs], extend the image using `Dockerfile` and build and push:
+
+[source,bash]
+----
+docker build -t incodehq/antora:2.0.0 .
+docker push incodehq/antora:2.0.0
+----
+
+
