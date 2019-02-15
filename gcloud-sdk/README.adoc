@@ -1,0 +1,15 @@
+= README
+
+ExtendS the https://hub.docker.com/r/google/cloud-sdk[google/cloud-sdk] (https://github.com/GoogleCloudPlatform/cloud-sdk-docker/blob/master/alpine/Dockerfile[github repo]) to also include the https://cloud.google.com/appengine/docs/standard/python/download[original GAE SDK] for Python.
+
+This allows `appcfg.py` to be used as an alternative to `gcloud app deploy`.
+
+To build:
+
+[source,bash]
+----
+docker build -t incodehq/gcloud-sdk:234.0.0-alpine_1.9.83 .
+docker push incodehq/gcloud-sdk:234.0.0-alpine_1.9.83
+----
+
+
